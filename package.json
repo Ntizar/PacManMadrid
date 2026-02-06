@@ -4,17 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preprocess": "node scripts/preprocess-gtfs.js",
     "dev": "vite",
     "build": "vite build",
+    "build:full": "node scripts/preprocess-gtfs.js && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@turf/along": "^7.3.1",
-    "@turf/length": "^7.3.1",
     "@turf/turf": "^7.3.1",
     "mapbox-gl": "^3.17.0",
-    "papaparse": "^5.5.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

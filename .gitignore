@@ -12,6 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# GTFS raw data (large — use public/data/ processed JSON instead)
+*EMT_MADRID/
+*EMT_MADRID.zip
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
